@@ -1,0 +1,452 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body[data-aos-duration='4000'] [data-aos],
+  [data-aos][data-aos][data-aos-duration='4000'] {
+    transition-duration: 4000ms;
+  }
+
+.menuTotal{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 6.46fr 0.3fr 0.3fr;
+    grid-template-areas: "menuRec logo search"
+                         "line1 line1 line1"
+                         "line2 line2 line2";
+    justify-items: center;
+    align-items: center;
+    margin-top: 1rem;
+    .logo{
+        grid-area: logo;
+    }
+    .menu{
+        grid-area: menuRec;
+        .hamburguer{
+            display: none;
+            cursor: pointer;
+            .bar{
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                transition: all 0.3s ease-in-out;
+                background-color: #000000;
+            }
+        }
+        .mainMenu{
+            display: flex;
+            .menuList{
+                list-style: none;
+                margin: 2rem;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 27px; 
+                color: #000000;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+            .mediaIconsMenu{
+                display: none;
+            }
+        }
+        .search{
+            grid-area: search;
+            .searchBar{
+                width: 80%;
+                background-color: #D9D9D9;
+                display: flex;
+                align-items: center;
+                border-radius: 25px;
+                padding: 5px 20px;
+                input{
+                    background-color: transparent;
+                    border: 0;
+                    outline: none;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 27px;
+                    width: 90%;
+                    height: auto;
+                }   
+                button{
+                    border: 0;
+                    outline: none;
+                    cursor: pointer;
+                    background-color: #D9D9D9;
+                    img{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+        .line1{
+            width: 93%;
+            grid-area: line1;
+            border: 1px solid #838383;
+            margin-top: 1rem; 
+        }
+        
+        .line2{
+            width: 93%;
+            grid-area: line2;
+            border: 1px solid #838383;
+            margin-top: 0.25rem;
+        }
+    }
+}
+
+/*index main*/
+
+main{
+    .carruselSize{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        .carousel-inner > .carousel-item > img { 
+            height: 40rem;
+            object-fit: cover;
+        }
+    }
+    .underImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+        gap: 1rem;
+        span{
+            font-style: normal;
+            font-weight: 550;
+            font-size: 1.4rem;
+            line-height: 30px;
+            color: black;
+        }
+        img{
+            height: 3rem;
+            width: 3rem;
+        }
+        .line6, .line7{
+            height: 60px;
+            border: 1px solid #838383;
+        }
+    }
+    .appointments{
+        display: grid;
+        grid-template-columns: 0.2fr 1fr;
+        grid-template-rows: 0.5fr 0.1fr 0.1fr 0.5fr;
+        grid-template-areas: "schedule schedule"
+                             "line3 line3"
+                             "appText appText"
+                             "request appBottom";
+        row-gap: 0.4rem;
+        margin-left: 4rem;
+        .appointmentsTittle{
+            grid-area: schedule;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+        }
+        .line3{
+            grid-area: line3;
+            border: 1px solid #838383;
+            margin-top: 0.2rem; 
+            margin-right: 4.5%;  
+        }
+        .appointmentsText{
+            grid-area: appText;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #7B7B7B;
+        }
+        .appointmentsTextReq{
+            grid-area: request;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+        }
+        .appointmentsTextUrl{
+            grid-area: appBottom;
+        }
+    }
+    .servAndStudies{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: 4rem;
+        margin-top: 5rem;
+        margin-bottom: 0.4rem;
+    }
+    .line4{
+        margin-right: 4%;  
+        border: 1px solid #838383;
+        margin-top: 0.2rem; 
+        margin-bottom: 2rem;
+        margin-left: 4rem;
+    }
+    .imageStudies{
+        display: grid;
+        grid-template-areas: "imgStudies1 imgStudies2 imgStudies3"
+                             "studiesDesc1 studiesDesc2 studiesDesc3";
+        column-gap: 2rem;
+        margin-right: 2.1%;
+        margin-left: 3.3%;
+        a img{
+            height: 22rem;
+            width: 34rem;
+            object-fit: cover;
+        }
+        a .imgStudies1{
+            grid-area: imgStudies1;
+        }
+        a .imgStudies2{
+            grid-area: imgStudies2;
+        }
+        a .imgStudies3{
+            grid-area: imgStudies3;
+        }
+        .studiesDesc1{
+            grid-area: studiesDesc1;
+        }
+        
+        .studiesDesc2{
+            grid-area: studiesDesc2;
+        }
+        
+        .studiesDesc3{
+            grid-area: studiesDesc3;
+        }
+        .studiesDesc1, .studiesDesc2, .studiesDesc3{
+            font-style: normal;
+            font-weight: 550;
+            font-size: 22px;
+            line-height: 30px;
+            color: white;
+            text-align: center;
+            background-color: #4f89c0;
+            width: 34rem;
+        }
+    }
+    .exam{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: 4rem;
+        margin-top: 3rem;
+    }
+    .imageExams {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 0.1fr;
+        grid-template-areas: "imgExams1 imgExams2 imgExams3"
+                             "examsDesc1 examsDesc2 examsDesc3";
+        column-gap: 2rem;
+        margin-right: 2.1%;
+        margin-left: 3.3%;
+        margin-top: 3rem;
+        .imageExams1{
+            grid-area: imgExams1;
+        }
+        
+        .imgExams2{
+            grid-area: imgExams2;
+        }
+        
+        .imgExams3{
+            grid-area: imgExams3;
+        }
+        
+        .examsDesc1{
+            grid-area: examsDesc1;
+        }
+        
+        .examsDesc2{
+            grid-area: examsDesc2;
+        }
+        
+        .examsDesc3{
+            grid-area: examsDesc3;
+        }
+        a img{
+            height: 22rem;
+            width: 34rem;
+            object-fit: cover;
+        }
+        .examsDesc1, .examsDesc2, .examsDesc3{
+            font-style: normal;
+            font-weight: 550;
+            font-size: 22px;
+            line-height: 30px;
+            color: white;
+            text-align: center;
+            background-color: rgb(79, 137, 192);
+            width: 34rem; 
+        }
+    }
+    .medRecords h2{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        margin-left: 4rem;
+        margin-bottom: 0.4rem;
+        margin-top: 5rem;
+        .line5{
+            margin-right: 4%;  
+            margin-left: 4rem;
+            border: 1px solid #838383;
+            margin-bottom: 0.4rem;
+        }
+        p{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #7B7B7B;
+            margin-left: 4rem;
+        }
+        a img{
+            margin-left: 4rem;
+            margin-top: 1rem;
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+/*main footer*/
+
+footer{
+    section{
+        .footerMenu ul{
+            display: flex;
+            flex-flow: column;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: white;
+            .footerMenuTop{
+                font-weight: 900;
+                color: rgb(79, 137, 192);
+            }
+            li{
+                list-style: none;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+        .footerInstitutional ul{
+            display: flex;
+            flex-flow: column;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: white;
+            .footerInstitutionalTop{
+                font-weight: 900;
+                color: rgb(79, 137, 192);
+            }
+            li{
+                list-style: none; 
+                a{
+                    text-decoration: none;
+                    color: white;
+                }  
+            }
+            
+        }
+        .footerAboutUs ul{
+            display: flex;
+            flex-flow: column;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: white;
+            .footerAboutUsTop{
+                font-weight: 900;
+                color: rgb(79, 137, 192);
+            }
+            li{
+                list-style: none;  
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+        .footerContact ul{
+            display: flex;
+            flex-flow: column;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: white;
+            .footerContactTop{
+                font-weight: 900;
+                color: rgb(79, 137, 192);
+            }
+            li{
+                list-style: none;  
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+        .footerFollow ul{
+            display: flex;
+            flex-flow: column;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: white;
+            gap: 0.2rem;
+            .footerFollowTop{
+                font-weight: 900;
+                color: rgb(79, 137, 192);
+            }
+            li{
+                list-style: none; 
+                a{
+                    text-decoration: none;
+                    color: white;
+                    margin: 5px;
+                }  
+            }
+        }
+    }
+    .rights{
+        display: flex;
+        background-color: #272727;
+        color: rgb(79, 137, 192);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        padding-left: 2rem;
+        p {
+            margin-left: 0.3rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+}
