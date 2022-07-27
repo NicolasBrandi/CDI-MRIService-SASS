@@ -45,42 +45,42 @@ body[data-aos-duration='4000'] [data-aos],
           color: black; }
       .menuTotal .menu .mainMenu .mediaIconsMenu {
         display: none; }
-    .menuTotal .menu .search {
-      grid-area: search; }
-      .menuTotal .menu .search .searchBar {
-        width: 80%;
-        background-color: #D9D9D9;
-        display: flex;
-        align-items: center;
-        border-radius: 25px;
-        padding: 5px 20px; }
-        .menuTotal .menu .search .searchBar input {
-          background-color: transparent;
-          border: 0;
-          outline: none;
-          font-style: normal;
-          font-weight: 500;
-          font-size: 20px;
-          line-height: 27px;
-          width: 90%;
-          height: auto; }
-        .menuTotal .menu .search .searchBar button {
-          border: 0;
-          outline: none;
-          cursor: pointer;
-          background-color: #D9D9D9; }
-          .menuTotal .menu .search .searchBar button img {
-            width: 80%; }
-    .menuTotal .menu .line1 {
-      width: 93%;
-      grid-area: line1;
-      border: 1px solid #838383;
-      margin-top: 1rem; }
-    .menuTotal .menu .line2 {
-      width: 93%;
-      grid-area: line2;
-      border: 1px solid #838383;
-      margin-top: 0.25rem; }
+  .menuTotal .search {
+    grid-area: search; }
+    .menuTotal .search .searchBar {
+      width: 80%;
+      background-color: #D9D9D9;
+      display: flex;
+      align-items: center;
+      border-radius: 25px;
+      padding: 5px 20px; }
+      .menuTotal .search .searchBar input {
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+        width: 90%;
+        height: auto; }
+      .menuTotal .search .searchBar button {
+        border: 0;
+        outline: none;
+        cursor: pointer;
+        background-color: #D9D9D9; }
+        .menuTotal .search .searchBar button img {
+          width: 80%; }
+  .menuTotal .line1 {
+    width: 93%;
+    grid-area: line1;
+    border: 1px solid #838383;
+    margin-top: 1rem; }
+  .menuTotal .line2 {
+    width: 93%;
+    grid-area: line2;
+    border: 1px solid #838383;
+    margin-top: 0.25rem; }
 
 /*index main*/
 main .carruselSize {
@@ -245,110 +245,118 @@ main .medRecords h2 {
   margin-left: 4rem;
   margin-bottom: 0.4rem;
   margin-top: 5rem; }
-  main .medRecords h2 .line5 {
-    margin-right: 4%;
-    margin-left: 4rem;
-    border: 1px solid #838383;
-    margin-bottom: 0.4rem; }
-  main .medRecords h2 p {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7B7B7B;
-    margin-left: 4rem; }
-  main .medRecords h2 a img {
-    margin-left: 4rem;
-    margin-top: 1rem;
-    margin-bottom: 4rem; }
+
+main .medRecords .line5 {
+  margin-right: 4%;
+  margin-left: 4rem;
+  border: 1px solid #838383;
+  margin-bottom: 0.4rem; }
+
+main .medRecords p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7B7B7B;
+  margin-left: 4rem; }
+
+main .medRecords a img {
+  margin-left: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem; }
 
 /*main footer*/
-footer section .footerMenu ul {
-  display: flex;
-  flex-flow: column;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  color: white; }
-  footer section .footerMenu ul .footerMenuTop {
-    font-weight: 900;
-    color: #4f89c0; }
-  footer section .footerMenu ul li {
-    list-style: none; }
-    footer section .footerMenu ul li a {
-      text-decoration: none;
-      color: white; }
-
-footer section .footerInstitutional ul {
-  display: flex;
-  flex-flow: column;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  color: white; }
-  footer section .footerInstitutional ul .footerInstitutionalTop {
-    font-weight: 900;
-    color: #4f89c0; }
-  footer section .footerInstitutional ul li {
-    list-style: none; }
-    footer section .footerInstitutional ul li a {
-      text-decoration: none;
-      color: white; }
-
-footer section .footerAboutUs ul {
-  display: flex;
-  flex-flow: column;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  color: white; }
-  footer section .footerAboutUs ul .footerAboutUsTop {
-    font-weight: 900;
-    color: #4f89c0; }
-  footer section .footerAboutUs ul li {
-    list-style: none; }
-    footer section .footerAboutUs ul li a {
-      text-decoration: none;
-      color: white; }
-
-footer section .footerContact ul {
-  display: flex;
-  flex-flow: column;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  color: white; }
-  footer section .footerContact ul .footerContactTop {
-    font-weight: 900;
-    color: #4f89c0; }
-  footer section .footerContact ul li {
-    list-style: none; }
-    footer section .footerContact ul li a {
-      text-decoration: none;
-      color: white; }
-
-footer section .footerFollow ul {
-  display: flex;
-  flex-flow: column;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  color: white;
-  gap: 0.2rem; }
-  footer section .footerFollow ul .footerFollowTop {
-    font-weight: 900;
-    color: #4f89c0; }
-  footer section .footerFollow ul li {
-    list-style: none; }
-    footer section .footerFollow ul li a {
-      text-decoration: none;
-      color: white;
-      margin: 5px; }
+footer section {
+  background-color: #272727;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "menu institutional aboutUs contact followUs";
+  padding-left: 7rem;
+  padding-top: 2rem;
+  padding-bottom: 9rem; }
+  footer section .footerMenu ul {
+    display: flex;
+    flex-flow: column;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: white; }
+    footer section .footerMenu ul li {
+      list-style: none; }
+      footer section .footerMenu ul li a {
+        text-decoration: none;
+        color: white; }
+    footer section .footerMenu ul .footerMenuTop {
+      font-weight: 900;
+      color: #4f89c0; }
+  footer section .footerInstitutional ul {
+    display: flex;
+    flex-flow: column;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: white; }
+    footer section .footerInstitutional ul li {
+      list-style: none; }
+      footer section .footerInstitutional ul li a {
+        text-decoration: none;
+        color: white; }
+    footer section .footerInstitutional ul .footerInstitutionalTop {
+      font-weight: 900;
+      color: #4f89c0; }
+  footer section .footerAboutUs ul {
+    display: flex;
+    flex-flow: column;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: white; }
+    footer section .footerAboutUs ul li {
+      list-style: none; }
+      footer section .footerAboutUs ul li a {
+        text-decoration: none;
+        color: white; }
+    footer section .footerAboutUs ul .footerAboutUsTop {
+      font-weight: 900;
+      color: #4f89c0; }
+  footer section .footerContact ul {
+    display: flex;
+    flex-flow: column;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: white; }
+    footer section .footerContact ul li {
+      list-style: none; }
+      footer section .footerContact ul li a {
+        text-decoration: none;
+        color: white; }
+    footer section .footerContact ul .footerContactTop {
+      font-weight: 900;
+      color: #4f89c0; }
+  footer section .footerFollow ul {
+    display: flex;
+    flex-flow: column;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    gap: 0.2rem; }
+    footer section .footerFollow ul li {
+      list-style: none; }
+      footer section .footerFollow ul li a {
+        text-decoration: none;
+        color: white;
+        margin: 5px; }
+    footer section .footerFollow ul .footerFollowTop {
+      font-weight: 900;
+      color: #4f89c0; }
 
 footer .rights {
   display: flex;
