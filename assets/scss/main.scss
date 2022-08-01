@@ -1,4 +1,5 @@
-
+$colorPrincipal: #4f89c0;
+$colorSecundario: #838383;
 
 *{
     padding: 0px;
@@ -93,14 +94,14 @@ body[data-aos-duration='4000'] [data-aos],
     .line1{
         width: 93%;
         grid-area: line1;
-        border: 1px solid #838383;
+        border: 1px solid $colorSecundario;
         margin-top: 1rem; 
     }
     
     .line2{
         width: 93%;
         grid-area: line2;
-        border: 1px solid #838383;
+        border: 1px solid $colorSecundario;
         margin-top: 0.25rem;
     }
 }
@@ -137,7 +138,7 @@ main{
         }
         .line6, .line7{
             height: 60px;
-            border: 1px solid #838383;
+            border: 1px solid $colorSecundario;
         }
     }
     .appointments{
@@ -159,7 +160,7 @@ main{
         }
         .line3{
             grid-area: line3;
-            border: 1px solid #838383;
+            border: 1px solid $colorSecundario;
             margin-top: 0.2rem; 
             margin-right: 4.5%;  
         }
@@ -194,7 +195,7 @@ main{
     }
     .line4{
         margin-right: 4%;  
-        border: 1px solid #838383;
+        border: 1px solid $colorSecundario;
         margin-top: 0.2rem; 
         margin-bottom: 2rem;
         margin-left: 4rem;
@@ -238,7 +239,7 @@ main{
             line-height: 30px;
             color: white;
             text-align: center;
-            background-color: #4f89c0;
+            background-color: $colorPrincipal;
             width: 34rem;
         }
     }
@@ -312,7 +313,7 @@ main{
         .line5{
             margin-right: 4%;  
             margin-left: 4rem;
-            border: 1px solid #838383;
+            border: 1px solid $colorSecundario;
             margin-bottom: 0.4rem;
         }
         p{
