@@ -465,4 +465,486 @@ footer{
 
 /*END INDEX*/
 
+
+
+/*NEWS*/
+
+section{
+    .topTopicTittle{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: black;
+        margin-left: 4rem;
+        margin-top: 4rem;
+    }
+
+    .line3News{
+        margin-right: 4%;
+        margin-left: 4rem;
+        border: 1px solid #838383;
+        margin-bottom: 2rem;
+    }
+
+    .topTopicsRow{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "tittle1 tittle2 tittle3";
+        column-gap: 7%;
+        padding-left: 2%;
+        padding-right: 2%;
+        .firstTopic{
+            grid-area: tittle1;
+            padding-left: 4rem;
+        }
+        
+        .secondTopic{
+            grid-area: tittle2;
+        }
+        
+        .thirdTopic{
+            grid-area: tittle3;
+            padding-right: 4rem;
+        }
+        div ul {
+            li{
+                list-style: none;
+            }
+            .topTopicsRowFirstTittle, .topTopicsRowSecondTittle, .topTopicsRowThirdTittle{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                color: #7B7B7B;
+                margin-bottom: 5px;
+            }
+            .topTopicsRowFirstText, .topTopicsRowSecondText, .topTopicsRowThirdText{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #7B7B7B;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                text-align: justify;
+            }
+            .topTopicsRowFirstRead, .topTopicsRowSecondRead, .topTopicsRowThirdRead{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: #7B7B7B;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+        }
+        
+    }
+
+    .covidTittle{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: black;
+        margin-left: 4rem;
+        margin-top: 4rem;
+    }
+
+    .line4News{
+        margin-right: 4%;
+        margin-left: 4rem;
+        border: 1px solid #838383;
+        margin-bottom: 2rem;
+    }
+    .covidRow{
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: auto;
+        grid-template-areas: "tittleCovid1 tittleCovid2 tittleCovid3";
+        column-gap: 7%;
+        padding-left: 2%;
+        padding-right: 2%;
+        .firstCovTopic{
+            grid-area: tittleCovid1;
+            padding-left: 4rem;
+        }
+        
+        .secondCovTopic{
+            grid-area: tittleCovid2;
+        }
+        
+        .thirdCovTopic{
+            grid-area: tittleCovid3;
+            padding-right: 4rem;
+        }
+        div ul {
+            li{
+                list-style: none;
+            }
+            .covidRowFirstTittle, .covidRowSecondTittle, .covidRowThirdTittle{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 24px;
+                color: #7B7B7B;
+                margin-bottom: 5px;
+            }
+            
+            .covidRowFirstText, .covidRowSecondText, .covidRowThirdText{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: #7B7B7B;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                text-align: justify;
+            }
+            
+            .covidRowFirstRead, .covidRowSecondRead, .covidRowThirdRead{
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: #7B7B7B;
+                margin-bottom: 20px;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+.appointmentsNews {
+    h2{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: black;
+        margin-left: 4rem;
+        margin-top: 4rem;
+    }
+    .line5News{
+        margin-right: 4%;
+        margin-left: 4rem;
+        border: 1px solid #838383;
+        margin-bottom: 1rem;
+    }
+    p{
+        width: 770px;
+        height: 44px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #7B7B7B;
+        margin-left: 4rem;
+    }
+    a img{
+        margin-left: 4rem;
+        margin-bottom: 4rem;
+    }
+}
+
+/*END NEWS*/
+
+/*RESOURCES*/
+
+main{
+    .resoursesTittle{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: white;
+        text-align: center;
+        background-color: rgb(79, 137, 192);
+        box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.5);
+        padding: 25px;
+        border-radius: 25px;
+        margin-left: 35%;
+        margin-right: 35%;
+        margin-top: 2rem;
+    }
+    .firstRowResourses{
+        display: grid;
+        grid-template-columns: 2fr 0.8fr 0.8fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas: "imagen1Res text1Res text2Res imagen2Res";
+        justify-items: center;
+        margin-top: 6rem;
+        .imagen1Res{
+            width: 80%;
+            grid-area: imagen1Res;
+        }
+        
+        .imagen2Res{
+            width: 80%;
+            grid-area: imagen2Res;
+        }
+        
+        .text1Res{
+            grid-area: text1Res;
+        }
+        
+        .text2Res{
+            grid-area: text2Res;
+        }
+        div ul{ 
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            color: #7B7B7B; 
+            li{
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+    .secondRowResourses{
+        display: grid;
+        grid-template-columns: 2fr 0.8fr 0.8fr 2fr;
+        grid-template-rows: auto;
+        grid-template-areas: "imagen3Res text3Res text4Res imagen4Res";
+        justify-items: center;
+        margin-top: 6rem;
+        .imagen3Res{
+            width: 80%;
+            grid-area: imagen3Res;
+        }
+        
+        .imagen4Res{
+            width: 80%;
+            grid-area: imagen4Res;
+        }
+        
+        .text3Res{
+            grid-area: text3Res;
+        }
+        
+        .text4Res{
+            grid-area: text4Res;
+        }
+        div ul{   
+            margin-left: 40px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            color: #7B7B7B;
+            li{
+                margin-bottom: 0.5rem;
+            }
+        }
+    }
+    .assistanceTittle{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: black;
+        margin-left: 4rem;
+        margin-top: 4rem;
+    }
+    
+    .line3Resourses{
+        width: 92.5%;
+        margin-left: 4rem;
+        border: 1px solid #838383;
+    }
+    .textResourses{
+        height: 44px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #7B7B7B;
+        margin-left: 4rem;
+        margin-top: 0.5rem;
+    }
+    form{
+        .formBoxResourses{
+            width: 800px;
+            height: 700px;
+            background-color: rgb(79, 137, 192);
+            margin: 7% auto;
+            padding: 50px 0;
+            color: white;
+            box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            a{
+                text-decoration: none;
+            }
+            .inputBoxRes{
+                margin-left: 100px;
+                margin-bottom: 30px;
+                width: 80%;
+                padding-top: 10px;
+                padding-bottom: 5px;
+                padding-left: 15px;
+                input{
+                    width: 90%;
+                    border: none;
+                    outline: none;
+                    padding: 10px;
+                    border-radius: 25px;
+                    text-align: center;
+                }
+            }
+            .inputBoxRes3{
+                margin-left: 100px;
+                margin-bottom: 30px;
+                width: 80%;
+                padding-top: 10px;
+                padding-bottom: 5px;
+                padding-left: 15px;
+                input{
+                    width: 90%;
+                    border: none;
+                    outline: none;
+                    padding: 50px;
+                    border-radius: 25px;
+                    text-align: center;
+                }
+            }
+            .buttonPosition{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+/*End Resources*/
+
+/*Appointments*/
+
+main{
+    div{
+        .requestAppointment{
+            display: flex;
+            flex-direction: column;
+            background-color: #D9D9D9;
+            align-items: center;
+            gap: 40px;
+            padding: 5rem;
+            border-radius: 25px;
+            li{
+                list-style: none;
+                p{
+                    text-align: justify;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #7B7B7B;
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+            }
+            .requestAppointmentTittle{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                color: black;
+                width: 20rem;
+                text-align: center;
+            }
+            .line3Appointments{
+                width: 100%;
+                border: 1px solid #141414;
+            }
+        }
+        .boxRescheduleAppointment{
+            display: flex;
+            flex-direction: column;
+            background-color: #D9D9D9;
+            align-items: center;
+            gap: 40px;
+            padding: 5rem;
+            border-radius: 25px;
+            li{
+                list-style: none;
+                .imageReschedule{
+                    width: 110%;
+                    padding-bottom: 20px;
+                }
+                p{
+                    text-align: justify;
+                    font-style: normal;
+                    font-weight: 1000;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #7B7B7B;
+                    margin-bottom: 20px;
+                    margin-top: 20px;
+                }
+            }
+            .rescheduleAppointmentTittle{
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 30px;
+                color: black;
+                width: 20rem;
+                text-align: center;
+            }
+            .line4Appointments{
+                width: 100%;
+                border: 1px solid #141414;
+            }
+        }
+    }
+}
+
+/*END APPOINTMENTS*/
+
+/*MEDICAL RECORDS*/
+
+main{
+    .formBox{
+        width: 800px;
+        height: 400px;
+        background-color: rgb(79, 137, 192);
+        margin: 12% auto;
+        padding: 50px;
+        color: white;
+        box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        h1{
+            text-align: center;
+            margin-bottom: 40px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 30px;
+            color: black;
+        }
+        .inputBox{
+            margin-bottom: 30px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+            padding-left: 10%;
+            margin-right: 10%;
+            input{
+                width: 100%;
+                border: none;
+                outline: none;
+                padding: 2%;
+                border-radius: 25px;
+                text-align: center;
+            }
+        }
+        .buttonPosition{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
 @import "base/media-queries";
