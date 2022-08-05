@@ -1,5 +1,8 @@
+@import "base/color-list";
+@import "base/mixin-center";
+@import "base/extend-font";
+
 $colorPrincipal: #4f89c0;
-$colorSecundario: #838383;
 
 *{
     padding: 0px;
@@ -20,8 +23,7 @@ body[data-aos-duration='4000'] [data-aos],
     grid-template-areas: "menuRec logo search"
                          "line1 line1 line1"
                          "line2 line2 line2";
-    justify-items: center;
-    align-items: center;
+    @include center;
     margin-top: 1rem;
     .logo{
         grid-area: logo;
@@ -37,7 +39,7 @@ body[data-aos-duration='4000'] [data-aos],
                 height: 3px;
                 margin: 5px auto;
                 transition: all 0.3s ease-in-out;
-                background-color: #000000;
+                background-color: nth($colors ,1);
             }
         }
         .mainMenu{
@@ -45,14 +47,12 @@ body[data-aos-duration='4000'] [data-aos],
             .menuList{
                 list-style: none;
                 margin: 2rem;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 20px;
+                @include fontStyle1;
                 line-height: 27px; 
-                color: #000000;
+                color: nth($colors ,1);
                 a{
                     text-decoration: none;
-                    color: black;
+                    color: nth($colors ,1);
                 }
             }
             .mediaIconsMenu{
@@ -64,7 +64,7 @@ body[data-aos-duration='4000'] [data-aos],
         grid-area: search;
         .searchBar{
             width: 80%;
-            background-color: #D9D9D9;
+            background-color: nth($colors ,3);
             display: flex;
             align-items: center;
             border-radius: 25px;
@@ -73,9 +73,7 @@ body[data-aos-duration='4000'] [data-aos],
                 background-color: transparent;
                 border: 0;
                 outline: none;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 20px;
+                @include fontStyle1;
                 line-height: 27px;
                 width: 90%;
                 height: auto;
@@ -84,7 +82,7 @@ body[data-aos-duration='4000'] [data-aos],
                 border: 0;
                 outline: none;
                 cursor: pointer;
-                background-color: #D9D9D9;
+                background-color: nth($colors ,3);
                 img{
                     width: 80%;
                 }
@@ -94,14 +92,14 @@ body[data-aos-duration='4000'] [data-aos],
     .line1{
         width: 93%;
         grid-area: line1;
-        border: 1px solid $colorSecundario;
+        border: 1px solid nth($colors ,2);
         margin-top: 1rem; 
     }
     
     .line2{
         width: 93%;
         grid-area: line2;
-        border: 1px solid $colorSecundario;
+        border: 1px solid nth($colors ,2);
         margin-top: 0.25rem;
     }
 }
@@ -130,7 +128,7 @@ main{
             font-weight: 550;
             font-size: 1.4rem;
             line-height: 30px;
-            color: black;
+            color: nth($colors ,1);
         }
         img{
             height: 3rem;
@@ -138,7 +136,7 @@ main{
         }
         .line6, .line7{
             height: 60px;
-            border: 1px solid $colorSecundario;
+            border: 1px solid nth($colors ,2);
         }
     }
     .appointments{
@@ -153,14 +151,12 @@ main{
         margin-left: 4rem;
         .appointmentsTittle{
             grid-area: schedule;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 24px;
+            @include fontStyle;
             line-height: 30px;
         }
         .line3{
             grid-area: line3;
-            border: 1px solid $colorSecundario;
+            border: 1px solid nth($colors ,2);
             margin-top: 0.2rem; 
             margin-right: 4.5%;  
         }
@@ -170,32 +166,27 @@ main{
             font-weight: 500;
             font-size: 16px;
             line-height: 24px;
-            color: #7B7B7B;
+            color: nth($colors ,5);
         }
         .appointmentsTextReq{
             grid-area: request;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
+            @extend %font;
             line-height: 24px;
-            color: #000000;
+            color: nth($colors ,1);
         }
         .appointmentsTextUrl{
             grid-area: appBottom;
         }
     }
     .servAndStudies{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 30px;
+        @include fontStyle;
         margin-left: 4rem;
         margin-top: 5rem;
         margin-bottom: 0.4rem;
     }
     .line4{
         margin-right: 4%;  
-        border: 1px solid $colorSecundario;
+        border: 1px solid nth($colors ,2);
         margin-top: 0.2rem; 
         margin-bottom: 2rem;
         margin-left: 4rem;
@@ -244,9 +235,7 @@ main{
         }
     }
     .exam{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
+        @include fontStyle;
         line-height: 30px;
         margin-left: 4rem;
         margin-top: 3rem;
@@ -294,17 +283,15 @@ main{
             font-weight: 550;
             font-size: 22px;
             line-height: 30px;
-            color: white;
+            color: nth($colors ,4);
             text-align: center;
-            background-color: rgb(79, 137, 192);
+            background-color: $colorPrincipal;
             width: 34rem; 
         }
     }
     .medRecords{
         h2{
-            font-style: normal;
-            font-weight: 700;
-            font-size: 24px;
+            @include fontStyle;
             line-height: 30px;
             margin-left: 4rem;
             margin-bottom: 0.4rem;
@@ -313,15 +300,13 @@ main{
         .line5{
             margin-right: 4%;  
             margin-left: 4rem;
-            border: 1px solid $colorSecundario;
+            border: 1px solid nth($colors ,2);
             margin-bottom: 0.4rem;
         }
         p{
-            font-style: normal;
-            font-weight: 500;
-            font-size: 16px;
+            @extend %font;
             line-height: 24px;
-            color: #7B7B7B;
+            color: nth($colors ,5);
             margin-left: 4rem;
         }
         a img{
@@ -336,7 +321,7 @@ main{
 
 footer{
     section{
-        background-color: #272727;
+        background-color: nth($colors ,6);
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
@@ -351,17 +336,17 @@ footer{
             font-weight: 500;
             font-size: 14px;
             line-height: 24px;
-            color: white;
+            color: nth($colors ,4);
             li{
                 list-style: none;
                 a{
                     text-decoration: none;
-                    color: white;
+                    color: nth($colors ,4);
                 }
             }
             .footerMenuTop{
                 font-weight: 900;
-                color: rgb(79, 137, 192);
+                color: $colorPrincipal;
             }
         }
         .footerInstitutional ul{
@@ -371,17 +356,17 @@ footer{
             font-weight: 500;
             font-size: 14px;
             line-height: 24px;
-            color: white;
+            color: nth($colors ,4);
             li{
                 list-style: none; 
                 a{
                     text-decoration: none;
-                    color: white;
+                    color: nth($colors ,4);
                 }  
             }
             .footerInstitutionalTop{
                 font-weight: 900;
-                color: rgb(79, 137, 192);
+                color: $colorPrincipal;
             }
         }
         .footerAboutUs ul{
@@ -391,17 +376,17 @@ footer{
             font-weight: 500;
             font-size: 14px;
             line-height: 24px;
-            color: white;
+            color: nth($colors ,4);
             li{
                 list-style: none;  
                 a{
                     text-decoration: none;
-                    color: white;
+                    color: nth($colors ,4);
                 }
             }
             .footerAboutUsTop{
                 font-weight: 900;
-                color: rgb(79, 137, 192);
+                color: $colorPrincipal;
              }
         }
         .footerContact ul{
@@ -411,17 +396,17 @@ footer{
             font-weight: 500;
             font-size: 14px;
             line-height: 24px;
-            color: white;
+            color: nth($colors ,4);
             li{
                 list-style: none;
                 a{
                     text-decoration: none;
-                    color: white;
+                    color: nth($colors ,4);
                 }  
             }
             .footerContactTop{
                 font-weight: 900;
-                color: rgb(79, 137, 192);
+                color: $colorPrincipal;
             }
         }
         .footerFollow ul{
@@ -431,26 +416,26 @@ footer{
             font-weight: 500;
             font-size: 14px;
             line-height: 24px;
-            color: white;
+            color: nth($colors ,4);
             gap: 0.2rem;
             li{
                 list-style: none;  
                 a{
                     text-decoration: none;
-                    color: white;
+                    color: nth($colors ,4);
                     margin: 5px;
                 } 
             }
             .footerFollowTop{
                 font-weight: 900;
-                color: rgb(79, 137, 192);
+                color: $colorPrincipal;
             }
         }   
     }
     .rights{
         display: flex;
-        background-color: #272727;
-        color: rgb(79, 137, 192);
+        background-color: nth($colors ,6);
+        color: $colorPrincipal;
         font-style: normal;
         font-weight: 500;
         font-size: 14px;
@@ -471,11 +456,9 @@ footer{
 
 section{
     .topTopicTittle{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
+        @include fontStyle;
         line-height: 30px;
-        color: black;
+        color: nth($colors ,1);
         margin-left: 4rem;
         margin-top: 4rem;
     }
@@ -483,7 +466,7 @@ section{
     .line3News{
         margin-right: 4%;
         margin-left: 4rem;
-        border: 1px solid #838383;
+        border: 1px solid nth($colors ,2);
         margin-bottom: 2rem;
     }
 
@@ -517,7 +500,7 @@ section{
                 font-weight: 700;
                 font-size: 18px;
                 line-height: 24px;
-                color: #7B7B7B;
+                color: nth($colors ,5);
                 margin-bottom: 5px;
             }
             .topTopicsRowFirstText, .topTopicsRowSecondText, .topTopicsRowThirdText{
@@ -525,7 +508,7 @@ section{
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 24px;
-                color: #7B7B7B;
+                color: nth($colors ,5);
                 margin-bottom: 20px;
                 margin-top: 20px;
                 text-align: justify;
@@ -535,7 +518,7 @@ section{
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 24px;
-                color: #7B7B7B;
+                color: nth($colors ,5);
                 margin-bottom: 20px;
                 margin-top: 20px;
             }
@@ -544,11 +527,9 @@ section{
     }
 
     .covidTittle{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
+        @include fontStyle;
         line-height: 30px;
-        color: black;
+        color: nth($colors ,1);
         margin-left: 4rem;
         margin-top: 4rem;
     }
@@ -556,7 +537,7 @@ section{
     .line4News{
         margin-right: 4%;
         margin-left: 4rem;
-        border: 1px solid #838383;
+        border: 1px solid nth($colors ,2);
         margin-bottom: 2rem;
     }
     .covidRow{
@@ -589,7 +570,7 @@ section{
                 font-weight: 700;
                 font-size: 18px;
                 line-height: 24px;
-                color: #7B7B7B;
+                color: nth($colors ,5);
                 margin-bottom: 5px;
             }
             
@@ -598,7 +579,7 @@ section{
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 24px;
-                color: #7B7B7B;
+                color: nth($colors ,5);
                 margin-bottom: 20px;
                 margin-top: 20px;
                 text-align: justify;
@@ -609,7 +590,7 @@ section{
                 font-weight: 600;
                 font-size: 16px;
                 line-height: 24px;
-                color: #7B7B7B;
+                color: nth($colors ,5);
                 margin-bottom: 20px;
                 margin-top: 20px;
             }
@@ -618,28 +599,24 @@ section{
 }
 .appointmentsNews {
     h2{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
+        @include fontStyle;
         line-height: 30px;
-        color: black;
+        color: nth($colors ,1);
         margin-left: 4rem;
         margin-top: 4rem;
     }
     .line5News{
         margin-right: 4%;
         margin-left: 4rem;
-        border: 1px solid #838383;
+        border: 1px solid nth($colors ,2);
         margin-bottom: 1rem;
     }
     p{
         width: 770px;
         height: 44px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
+        @extend %font;
         line-height: 24px;
-        color: #7B7B7B;
+        color: nth($colors ,5);
         margin-left: 4rem;
     }
     a img{
@@ -654,13 +631,11 @@ section{
 
 main{
     .resoursesTittle{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
+        @include fontStyle;
         line-height: 30px;
-        color: white;
+        color: nth($colors ,4);
         text-align: center;
-        background-color: rgb(79, 137, 192);
+        background-color: $colorPrincipal;
         box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.5);
         padding: 25px;
         border-radius: 25px;
@@ -697,7 +672,7 @@ main{
             font-weight: 500;
             font-size: 18px;
             line-height: 24px;
-            color: #7B7B7B; 
+            color: nth($colors ,5); 
             li{
                 margin-bottom: 0.5rem;
             }
@@ -733,18 +708,16 @@ main{
             font-weight: 500;
             font-size: 18px;
             line-height: 24px;
-            color: #7B7B7B;
+            color: nth($colors ,5);
             li{
                 margin-bottom: 0.5rem;
             }
         }
     }
     .assistanceTittle{
-        font-style: normal;
-        font-weight: 700;
-        font-size: 24px;
+        @include fontStyle;
         line-height: 30px;
-        color: black;
+        color: nth($colors ,1);
         margin-left: 4rem;
         margin-top: 4rem;
     }
@@ -752,7 +725,7 @@ main{
     .line3Resourses{
         width: 92.5%;
         margin-left: 4rem;
-        border: 1px solid #838383;
+        border: 1px solid nth($colors ,2);
     }
     .textResourses{
         height: 44px;
@@ -760,7 +733,7 @@ main{
         font-weight: 500;
         font-size: 18px;
         line-height: 24px;
-        color: #7B7B7B;
+        color: nth($colors ,5);
         margin-left: 4rem;
         margin-top: 0.5rem;
     }
@@ -768,10 +741,10 @@ main{
         .formBoxResourses{
             width: 800px;
             height: 700px;
-            background-color: rgb(79, 137, 192);
+            background-color: $colorPrincipal;
             margin: 7% auto;
             padding: 50px 0;
-            color: white;
+            color: nth($colors ,4);
             box-shadow: 1px 3px 8px 2px rgba(0, 0, 0, 0.5);
             border-radius: 15px;
             a{
@@ -827,7 +800,7 @@ main{
         .requestAppointment{
             display: flex;
             flex-direction: column;
-            background-color: #D9D9D9;
+            background-color: nth($colors ,3);
             align-items: center;
             gap: 40px;
             padding: 5rem;
@@ -836,11 +809,9 @@ main{
                 list-style: none;
                 p{
                     text-align: justify;
-                    font-style: normal;
-                    font-weight: 600;
-                    font-size: 16px;
+                    @extend %font;
                     line-height: 24px;
-                    color: #7B7B7B;
+                    color: nth($colors ,5);
                     margin-bottom: 20px;
                     margin-top: 20px;
                 }
@@ -850,7 +821,7 @@ main{
                 font-weight: 700;
                 font-size: 20px;
                 line-height: 30px;
-                color: black;
+                color: nth($colors ,1);
                 width: 20rem;
                 text-align: center;
             }
@@ -862,7 +833,7 @@ main{
         .boxRescheduleAppointment{
             display: flex;
             flex-direction: column;
-            background-color: #D9D9D9;
+            background-color: nth($colors ,3);
             align-items: center;
             gap: 40px;
             padding: 5rem;
@@ -879,7 +850,7 @@ main{
                     font-weight: 1000;
                     font-size: 16px;
                     line-height: 24px;
-                    color: #7B7B7B;
+                    color: nth($colors ,5);
                     margin-bottom: 20px;
                     margin-top: 20px;
                 }
@@ -889,7 +860,7 @@ main{
                 font-weight: 700;
                 font-size: 20px;
                 line-height: 30px;
-                color: black;
+                color: nth($colors ,1);
                 width: 20rem;
                 text-align: center;
             }
@@ -909,10 +880,10 @@ main{
     .formBox{
         width: 800px;
         height: 400px;
-        background-color: rgb(79, 137, 192);
+        background-color: $colorPrincipal;
         margin: 12% auto;
         padding: 50px;
-        color: white;
+        color: nth($colors ,4);
         box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
         border-radius: 15px;
         h1{
@@ -922,7 +893,7 @@ main{
             font-weight: 700;
             font-size: 26px;
             line-height: 30px;
-            color: black;
+            color: nth($colors ,1);
         }
         .inputBox{
             margin-bottom: 30px;
