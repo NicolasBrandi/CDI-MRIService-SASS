@@ -652,11 +652,13 @@ main{
         margin-top: 6rem;
         .imagen1Res{
             grid-area: imagen1Res;
+            width: 90%;
         }
         
         .imagen2Res{
             object-fit: cover;
             grid-area: imagen2Res;
+            width: 90%;
         }
         
         .text1Res{
@@ -687,11 +689,13 @@ main{
         .imagen3Res{
             object-fit: cover;
             grid-area: imagen3Res;
+            width: 90%;
         }
         
         .imagen4Res{
             object-fit: cover;
             grid-area: imagen4Res;
+            width: 90%;
         }
         
         .text3Res{

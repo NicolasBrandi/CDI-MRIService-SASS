@@ -1000,10 +1000,10 @@
             grid-template-areas: "imagen1Res imagen2Res"
                                  "text1Res text2Res";
             column-gap: 1.5rem;
+            row-gap: 0.8rem;
             .imagen1Res{
                 grid-area: imagen1Res;
                 width: 100%;
-                height: 94%;
                 object-fit: cover;    
             }
         
@@ -1018,7 +1018,6 @@
             .imagen2Res{
                 width: 100%;
                 grid-area: imagen2Res;
-                
             }
         }
         .secondRowResourses{
@@ -1077,15 +1076,17 @@
     
         .firstRowResourses{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: auto;
             grid-template-rows: auto;
-            grid-template-areas: "imagen1Res imagen2Res"
-                                 "text1Res text2Res";
+            grid-template-areas: "imagen1Res"
+                                 "text1Res"
+                                 "imagen2Res"
+                                 "text2Res";
             column-gap: 1.5rem;
+            row-gap: 0.8rem;
             .imagen1Res{
                 grid-area: imagen1Res;
                 width: 100%;
-                height: 94%;
                 object-fit: cover;    
             }
         
@@ -1104,24 +1105,32 @@
         }
         .secondRowResourses{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: auto;
             grid-template-rows: auto;
-            grid-template-areas: "imagen3Res imagen4Res"
-                                 "text3Res text4Res";
+            grid-template-areas: "imagen3Res"
+                                 "text3Res" 
+                                 "imagen4Res"
+                                 "text4Res";
             column-gap: 1.5rem;
             row-gap: 0.8rem;
+            margin-top: 0%;
             .imagen3Res{
                 width: 100%;
-                height: 100%;
                 grid-area: imagen3Res;  
             }
         
             .text3Res{
                 grid-area: text3Res;
+                ul{
+                    margin: 0px;
+                }
             }
         
             .text4Res{
                 grid-area: text4Res;
+                ul{
+                    margin: 0px;
+                }
             }
         
             .imagen4Res{
@@ -1140,6 +1149,7 @@
         }
         .textResourses{
             margin-left: 1rem;
+            padding-bottom: 4rem;
         }
         form{
             .formBoxResourses{

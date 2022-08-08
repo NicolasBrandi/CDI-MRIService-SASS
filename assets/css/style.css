@@ -538,10 +538,12 @@ main .firstRowResourses {
   justify-items: center;
   margin-top: 6rem; }
   main .firstRowResourses .imagen1Res {
-    grid-area: imagen1Res; }
+    grid-area: imagen1Res;
+    width: 90%; }
   main .firstRowResourses .imagen2Res {
     object-fit: cover;
-    grid-area: imagen2Res; }
+    grid-area: imagen2Res;
+    width: 90%; }
   main .firstRowResourses .text1Res {
     grid-area: text1Res; }
   main .firstRowResourses .text2Res {
@@ -564,10 +566,12 @@ main .secondRowResourses {
   margin-top: 6rem; }
   main .secondRowResourses .imagen3Res {
     object-fit: cover;
-    grid-area: imagen3Res; }
+    grid-area: imagen3Res;
+    width: 90%; }
   main .secondRowResourses .imagen4Res {
     object-fit: cover;
-    grid-area: imagen4Res; }
+    grid-area: imagen4Res;
+    width: 90%; }
   main .secondRowResourses .text3Res {
     grid-area: text3Res; }
   main .secondRowResourses .text4Res {
@@ -1447,11 +1451,11 @@ main .formBox {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "imagen1Res imagen2Res" "text1Res text2Res";
-    column-gap: 1.5rem; }
+    column-gap: 1.5rem;
+    row-gap: 0.8rem; }
     main .firstRowResourses .imagen1Res {
       grid-area: imagen1Res;
       width: 100%;
-      height: 94%;
       object-fit: cover; }
     main .firstRowResourses .text1Res {
       grid-area: text1Res; }
@@ -1496,14 +1500,14 @@ main .formBox {
     margin-left: 0%; }
   main .firstRowResourses {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "imagen1Res imagen2Res" "text1Res text2Res";
-    column-gap: 1.5rem; }
+    grid-template-areas: "imagen1Res" "text1Res" "imagen2Res" "text2Res";
+    column-gap: 1.5rem;
+    row-gap: 0.8rem; }
     main .firstRowResourses .imagen1Res {
       grid-area: imagen1Res;
       width: 100%;
-      height: 94%;
       object-fit: cover; }
     main .firstRowResourses .text1Res {
       grid-area: text1Res; }
@@ -1514,19 +1518,23 @@ main .formBox {
       grid-area: imagen2Res; }
   main .secondRowResourses {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: "imagen3Res imagen4Res" "text3Res text4Res";
+    grid-template-areas: "imagen3Res" "text3Res"  "imagen4Res" "text4Res";
     column-gap: 1.5rem;
-    row-gap: 0.8rem; }
+    row-gap: 0.8rem;
+    margin-top: 0%; }
     main .secondRowResourses .imagen3Res {
       width: 100%;
-      height: 100%;
       grid-area: imagen3Res; }
     main .secondRowResourses .text3Res {
       grid-area: text3Res; }
+      main .secondRowResourses .text3Res ul {
+        margin: 0px; }
     main .secondRowResourses .text4Res {
       grid-area: text4Res; }
+      main .secondRowResourses .text4Res ul {
+        margin: 0px; }
     main .secondRowResourses .imagen4Res {
       width: 100%;
       grid-area: imagen4Res; }
@@ -1537,7 +1545,8 @@ main .formBox {
     width: 100%;
     margin: 0%; }
   main .textResourses {
-    margin-left: 1rem; }
+    margin-left: 1rem;
+    padding-bottom: 4rem; }
   main form .formBoxResourses {
     width: 100%; }
     main form .formBoxResourses .inputBoxRes {
