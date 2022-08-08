@@ -1,4 +1,4 @@
-main .appointments .appointmentsTextReq, main .medRecords p, .appointmentsNews p, main div .requestAppointment li p {
+main .appointments .appointmentsTextReq, main .medRecords p, .appointmentsNews p {
   font-style: normal;
   font-weight: 500;
   font-size: 16px; }
@@ -538,10 +538,9 @@ main .firstRowResourses {
   justify-items: center;
   margin-top: 6rem; }
   main .firstRowResourses .imagen1Res {
-    width: 80%;
     grid-area: imagen1Res; }
   main .firstRowResourses .imagen2Res {
-    width: 80%;
+    object-fit: cover;
     grid-area: imagen2Res; }
   main .firstRowResourses .text1Res {
     grid-area: text1Res; }
@@ -564,10 +563,10 @@ main .secondRowResourses {
   justify-items: center;
   margin-top: 6rem; }
   main .secondRowResourses .imagen3Res {
-    width: 80%;
+    object-fit: cover;
     grid-area: imagen3Res; }
   main .secondRowResourses .imagen4Res {
-    width: 80%;
+    object-fit: cover;
     grid-area: imagen4Res; }
   main .secondRowResourses .text3Res {
     grid-area: text3Res; }
@@ -663,8 +662,13 @@ main div .requestAppointment {
   border-radius: 25px; }
   main div .requestAppointment li {
     list-style: none; }
+    main div .requestAppointment li .buttonSize {
+      padding: 0.6rem 5rem; }
     main div .requestAppointment li p {
       text-align: justify;
+      font-style: normal;
+      font-weight: 1000;
+      font-size: 16px;
       line-height: 24px;
       color: #7B7B7B;
       margin-bottom: 20px;
@@ -691,6 +695,8 @@ main div .boxRescheduleAppointment {
   border-radius: 25px; }
   main div .boxRescheduleAppointment li {
     list-style: none; }
+    main div .boxRescheduleAppointment li .buttonSize {
+      padding: 0.6rem 5rem; }
     main div .boxRescheduleAppointment li .imageReschedule {
       width: 110%;
       padding-bottom: 20px; }
@@ -1141,7 +1147,7 @@ main .formBox {
     main .underImage .innUnder {
       grid-area: innovation;
       position: relative;
-      left: 8rem; }
+      left: 10rem; }
     main .underImage .innImg {
       grid-area: imgInn;
       position: relative;

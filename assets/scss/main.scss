@@ -651,12 +651,11 @@ main{
         justify-items: center;
         margin-top: 6rem;
         .imagen1Res{
-            width: 80%;
             grid-area: imagen1Res;
         }
         
         .imagen2Res{
-            width: 80%;
+            object-fit: cover;
             grid-area: imagen2Res;
         }
         
@@ -686,12 +685,12 @@ main{
         justify-items: center;
         margin-top: 6rem;
         .imagen3Res{
-            width: 80%;
+            object-fit: cover;
             grid-area: imagen3Res;
         }
         
         .imagen4Res{
-            width: 80%;
+            object-fit: cover;
             grid-area: imagen4Res;
         }
         
@@ -807,9 +806,14 @@ main{
             border-radius: 25px;
             li{
                 list-style: none;
+                .buttonSize{
+                    padding:0.6rem 5rem;
+                }
                 p{
                     text-align: justify;
-                    @extend %font;
+                    font-style: normal;
+                    font-weight: 1000;
+                    font-size: 16px;
                     line-height: 24px;
                     color: nth($colors ,5);
                     margin-bottom: 20px;
@@ -840,6 +844,9 @@ main{
             border-radius: 25px;
             li{
                 list-style: none;
+                .buttonSize{
+                    padding:0.6rem 5rem;
+                }
                 .imageReschedule{
                     width: 110%;
                     padding-bottom: 20px;
