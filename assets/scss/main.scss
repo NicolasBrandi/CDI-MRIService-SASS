@@ -44,6 +44,10 @@ body[data-aos-duration='4000'] [data-aos],
         }
         .mainMenu{
             display: flex;
+            align-items: center;
+            .homeMenu{
+                display: none;
+            }       
             .menuList{
                 list-style: none;
                 margin: 2rem;
