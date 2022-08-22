@@ -1507,7 +1507,8 @@ main .formBox {
       font-size: 16px;
       line-height: 24px;
       color: #7B7B7B;
-      margin-left: 0rem; }
+      margin-left: 5%;
+      margin-right: 5%; }
     main .appointments .appointmentsTextReq {
       grid-area: request;
       font-style: normal;
@@ -1515,7 +1516,7 @@ main .formBox {
       font-size: 16px;
       line-height: 24px;
       color: #000000;
-      margin-left: 0rem; }
+      margin-left: 5%; }
     main .appointments .appointmentsTextUrl {
       grid-area: appBottom;
       width: 90%;
@@ -1701,17 +1702,29 @@ main .formBox {
   section .topTopicsRow {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
     grid-template-areas: "tittle1" "tittle2" "tittle3";
     row-gap: 3rem; }
     section .topTopicsRow .firstTopic {
       padding: 0%;
       grid-area: tittle1; }
+      section .topTopicsRow .firstTopic ul {
+        padding: 0%;
+        margin-left: 5%;
+        margin-right: 5%; }
     section .topTopicsRow .secondTopic {
       grid-area: tittle2; }
+      section .topTopicsRow .secondTopic ul {
+        padding: 0%;
+        margin-left: 5%;
+        margin-right: 5%; }
     section .topTopicsRow .thirdTopic {
       padding: 0%;
       grid-area: tittle3; }
+      section .topTopicsRow .thirdTopic ul {
+        padding: 0%;
+        margin-left: 5%;
+        margin-right: 5%; }
   section .covidTittle {
     font-style: normal;
     font-weight: 700;
@@ -1734,11 +1747,23 @@ main .formBox {
     section .covidRow .firstCovTopic {
       grid-area: tittleCovid1;
       padding: 0%; }
+      section .covidRow .firstCovTopic ul {
+        padding: 0%;
+        margin-left: 5%;
+        margin-right: 5%; }
     section .covidRow .secondCovTopic {
       grid-area: tittleCovid2; }
+      section .covidRow .secondCovTopic ul {
+        padding: 0%;
+        margin-left: 5%;
+        margin-right: 5%; }
     section .covidRow .thirdCovTopic {
       grid-area: tittleCovid3;
       padding: 0%; }
+      section .covidRow .thirdCovTopic ul {
+        padding: 0%;
+        margin-left: 5%;
+        margin-right: 5%; }
   .appointmentsNews h2 {
     font-style: normal;
     font-weight: 700;
@@ -1768,21 +1793,24 @@ main .formBox {
       padding: 0%;
       grid-area: tittle1; }
       section .topTopicsRow .firstTopic ul {
-        margin-left: 0%;
-        padding-left: 0%; }
+        padding: 0%;
+        margin-left: 5%;
+        margin-right: 5%; }
     section .topTopicsRow .secondTopic {
       grid-area: tittle2;
       padding: 0%;
       margin: 0%; }
       section .topTopicsRow .secondTopic ul {
-        margin-left: 0%;
-        padding-left: 0%; }
+        padding: 0%;
+        margin-left: 5%;
+        margin-right: 5%; }
     section .topTopicsRow .thirdTopic {
       padding: 0%;
       grid-area: tittle3; }
       section .topTopicsRow .thirdTopic ul {
-        margin-left: 0%;
-        padding-left: 0%; }
+        padding: 0%;
+        margin-left: 5%;
+        margin-right: 5%; }
   section .covidRow {
     display: grid;
     grid-template-columns: auto;
@@ -1792,19 +1820,22 @@ main .formBox {
       grid-area: tittleCovid1;
       padding: 0%; }
       section .covidRow .firstCovTopic ul {
-        margin-left: 0%;
-        padding-left: 0%; }
+        padding: 0%;
+        margin-left: 5%;
+        margin-right: 5%; }
     section .covidRow .secondCovTopic {
       grid-area: tittleCovid2; }
       section .covidRow .secondCovTopic ul {
-        margin-left: 0%;
-        padding-left: 0%; }
+        padding: 0%;
+        margin-left: 5%;
+        margin-right: 5%; }
     section .covidRow .thirdCovTopic {
       grid-area: tittleCovid3;
       padding: 0%; }
       section .covidRow .thirdCovTopic ul {
-        margin-left: 0%;
-        padding-left: 0%; }
+        padding: 0%;
+        margin-left: 5%;
+        margin-right: 5%; }
   .appointmentsNews h2 {
     font-style: normal;
     font-weight: 700;
@@ -1818,10 +1849,11 @@ main .formBox {
     margin-left: 0%;
     border: 1px solid #838383; }
   .appointmentsNews p {
-    width: auto;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto; }
+    text-align: justify;
+    height: 5rem;
+    width: 15rem;
+    margin-left: 5%;
+    margin-right: 5%; }
   .appointmentsNews a img {
     margin-top: 2rem;
     display: block;
@@ -1931,8 +1963,10 @@ main .formBox {
     width: 100%;
     margin: 0%; }
   main .textResourses {
-    margin-left: 1rem;
-    padding-bottom: 4rem; }
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 4rem;
+    text-align: justify; }
   main form .formBoxResourses {
     width: 100%; }
     main form .formBoxResourses .inputBoxRes {

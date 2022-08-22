@@ -1063,7 +1063,8 @@
                 font-size: 16px;
                 line-height: 24px;
                 color: #7B7B7B;
-                margin-left: 0rem;
+                margin-left: 5%;
+                margin-right: 5%;
             }
             
             .appointmentsTextReq{
@@ -1073,7 +1074,7 @@
                 font-size: 16px;
                 line-height: 24px;
                 color: #000000;
-                margin-left: 0rem;
+                margin-left: 5%;
             }
             
             .appointmentsTextUrl{
@@ -1290,7 +1291,7 @@
             padding-right: 15%;
             .firstTopic{
                 grid-area: tittle1;
-            padding: 0%;
+                padding: 0%;
             }
             
             .secondTopic{
@@ -1357,23 +1358,38 @@
         .topTopicsRow{
             display: grid;
             grid-template-columns: auto;
-            grid-template-rows: 0.5fr 1fr 0.5fr;
+            grid-template-rows: 0.5fr 0.5fr 0.5fr;
             grid-template-areas: "tittle1"
                                 "tittle2"
                                 "tittle3";
             row-gap: 3rem;
             .firstTopic{
                 padding: 0%;
-                grid-area: tittle1;   
+                grid-area: tittle1; 
+                ul{
+                    padding: 0%;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                }  
             }
         
             .secondTopic{
                 grid-area: tittle2;
+                ul{
+                    padding: 0%;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                } 
             }
             
             .thirdTopic{
                 padding: 0%;
                 grid-area: tittle3;  
+                ul{
+                    padding: 0%;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                } 
             }
         }
         .covidTittle{
@@ -1403,15 +1419,30 @@
             .firstCovTopic{
                 grid-area: tittleCovid1;
                 padding: 0%;
+                ul{
+                    padding: 0%;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                } 
             }
             
             .secondCovTopic{
                 grid-area: tittleCovid2;
+                ul{
+                    padding: 0%;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                } 
             }
             
             .thirdCovTopic{
                 grid-area: tittleCovid3;
                 padding: 0%;
+                ul{
+                    padding: 0%;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                } 
             }
         }
     }
@@ -1454,9 +1485,10 @@
                 padding: 0%;
                 grid-area: tittle1; 
                 ul{
-                    margin-left: 0%;
-                    padding-left: 0%;
-                }  
+                    padding: 0%;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                } 
             }
         
             .secondTopic{
@@ -1464,8 +1496,9 @@
                 padding: 0%;
                 margin: 0%;
                 ul{
-                    margin-left: 0%;
-                    padding-left: 0%;
+                    padding: 0%;
+                    margin-left: 5%;
+                    margin-right: 5%;
                 }  
             }
             
@@ -1473,8 +1506,9 @@
                 padding: 0%;
                 grid-area: tittle3; 
                 ul{
-                    margin-left: 0%;
-                    padding-left: 0%;
+                    padding: 0%;
+                    margin-left: 5%;
+                    margin-right: 5%;
                 }   
             }
         }
@@ -1489,16 +1523,18 @@
                 grid-area: tittleCovid1;
                 padding: 0%;
                 ul{
-                    margin-left: 0%;
-                    padding-left: 0%;
+                    padding: 0%;
+                    margin-left: 5%;
+                    margin-right: 5%;
                 }  
             }
             
             .secondCovTopic{
                 grid-area: tittleCovid2;
                 ul{
-                    margin-left: 0%;
-                    padding-left: 0%;
+                    padding: 0%;
+                    margin-left: 5%;
+                    margin-right: 5%;
                 }  
             }
             
@@ -1506,9 +1542,10 @@
                 grid-area: tittleCovid3;
                 padding: 0%;
                 ul{
-                    margin-left: 0%;
-                    padding-left: 0%;
-                }  
+                    padding: 0%;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                }   
             }
         }
     }
@@ -1528,10 +1565,11 @@
             border: 1px solid #838383;
         }
         p{
-            width: auto;
-            height: auto;
-            margin-left: auto;
-            margin-right: auto;
+            text-align: justify;
+            height: 5rem;
+            width: 15rem;
+            margin-left: 5%;
+            margin-right: 5%;
         }
         a img{
             margin-top: 2rem;
@@ -1705,8 +1743,10 @@
             margin: 0%;
         }
         .textResourses{
-            margin-left: 1rem;
+            margin-left: 5%;
+            margin-right: 5%;
             padding-bottom: 4rem;
+            text-align: justify;
         }
         form{
             .formBoxResourses{
